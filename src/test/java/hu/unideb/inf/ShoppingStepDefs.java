@@ -38,8 +38,7 @@ public class ShoppingStepDefs extends AbstractStepDefs {
 
     @And("the {string} field is left empty")
     public void leaveFieldEmpty(String field) {
-        // Implement logic to leave the specified field empty during checkout
-        homePage.fillOutField(field, ""); // This could be a method in your page object to leave a field empty
+        homePage.fillOutField(field, "");
     }
 
 
