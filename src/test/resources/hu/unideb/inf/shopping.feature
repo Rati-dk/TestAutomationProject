@@ -7,7 +7,7 @@ Feature: Saucedemo Shopping
     And the 'Login' button is clicked
 
 #
-##5points
+
 #  Scenario Outline: Add Various Items to Cart And Verify
 #    Given the '<item1>' is added to the cart
 #    And the '<item2>' is added to the cart
@@ -20,7 +20,7 @@ Feature: Saucedemo Shopping
 #      | Sauce Labs Fleece Jacket          | Sauce Labs Onesie       |
 #      | Test.allTheThings() T-Shirt (Red) | Sauce Labs Bike Light   |
 
-#6points
+
 
 Scenario Outline: Adding an item and calculate the total
   Given the '<item>' is added to the cart
@@ -41,7 +41,7 @@ Examples:
 | Sauce Labs Onesie | Mark | Zuckerberg  | 4444 | Total: $140.34 |
 
 
-#6points
+
   Scenario Outline: Verifying Number of items after removing items from cart
     Given the '<item>' is removed from the cart
     Then the number of items should be '<num>'
