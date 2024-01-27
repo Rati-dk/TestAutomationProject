@@ -3,7 +3,7 @@ Feature: Saucedemo User Logout
   Background:
     Given the home page is opened
 
-  # 6points
+
   Scenario Outline: Logout with Different Credentials
     Given the 'Username' field is filled with '<username>'
     And the 'Password' field is filled with '<password>'
