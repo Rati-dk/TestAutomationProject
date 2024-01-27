@@ -3,12 +3,12 @@ Feature: Saucedemo User Login
   Background:
     Given the home page is opened
 
-    #3points
+
     Scenario: Attempting login without providing username and password
       When the 'Login' button is clicked
       Then the 'Epic sadface: Username is required' message is shown
 
-      #3points
+
     Scenario: Login with correct credentials and verify redirection
       Given the 'Username' field is filled with 'standard_user'
       And the 'Password' field is filled with 'secret_sauce'
