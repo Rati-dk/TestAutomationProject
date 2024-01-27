@@ -6,13 +6,13 @@ Feature: Saucedemo Checkout
     And the 'Password' field is filled with 'secret_sauce'
     And the 'Login' button is clicked
 
-    #3points
+
     Scenario: Attempt to checkout without adding items to cart
       And the 'Cart' button is clicked
       And the 'Checkout' button is clicked
       Then the 'You cannot checkout' message should be displayed during checkout
 
-  #5points
+
   Scenario Outline: Incorrect checkout attempts
     Given the 'Cart' button is clicked
     And the 'Checkout' button is clicked
